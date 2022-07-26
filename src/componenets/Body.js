@@ -11,7 +11,7 @@ export default function Body() {
         <button type="button" className="btn btn-danger mx-2">
           -
         </button>
-        <button type="button" disabled="true" className="btn btn-light">
+        <button type="button" disabled={true} className="btn btn-light">
           withdraw/deposit
         </button>
         <button type="button" className="btn btn-success mx-2">

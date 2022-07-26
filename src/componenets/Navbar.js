@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="container-fluid">
           <span className="navbar-brand mb-0 h1 my-5 position-absolute top-0 start-50 translate-middle">
             Updated Balance
-            <button type="button" disabled="True" class="btn btn-info mx-3">
+            <button type="button" disabled={true} className="btn btn-info mx-3">
               0
             </button>
           </span>
