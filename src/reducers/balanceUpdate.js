@@ -1,4 +1,4 @@
-const initialState = 0;
+const initialState = 100;
 const updateBaalance = (state = initialState, action) => {
   switch (action.type) {
     case "DEPOSIT":
