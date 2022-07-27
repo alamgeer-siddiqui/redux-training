@@ -4,6 +4,7 @@ import { depositBalance, withdrawBalance } from "../action/index";
 
 export default function Body() {
   const dispatch = useDispatch();
+  
   return (
     <div className="position-absolute top-50 start-50 translate-middle">
       <div
@@ -14,7 +15,7 @@ export default function Body() {
         <button
           type="button"
           className="btn btn-danger mx-2"
-          onClick={() => dispatch(withdrawBalance)}
+          onClick={() => {dispatch(withdrawBalance(100))}}
         >
           -
         </button>
@@ -24,7 +25,7 @@ export default function Body() {
         <button
           type="button"
           className="btn btn-success mx-2"
-          onClick={() => dispatch(depositBalance)}
+          onClick={() => dispatch(depositBalance(100))}
         >
           +
         </button>

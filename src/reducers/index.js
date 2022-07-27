@@ -1,6 +1,6 @@
 import updateBaalance from "./balanceUpdate";
 import { combineReducers } from "redux";
 const rootReducer = combineReducers({
-  updateBaalance,
+  amount: updateBaalance,
 });
 export default rootReducer;

@@ -2,15 +2,15 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 export default function Navbar() {
-  const balance = useSelector((state) => state.updateBaalance);
+  const balance = useSelector((state) => state.amount);
   return (
     <>
       <nav className="navbar bg-light">
         <div className="container-fluid">
           <span className="navbar-brand mb-0 h1 my-5 position-absolute top-0 start-50 translate-middle">
-            Updated Balance
+            
             <button type="button" disabled={true} className="btn btn-info mx-3">
-              {balance}
+            Your Balance : {balance}
             </button>
           </span>
         </div>

@@ -1,10 +1,16 @@
-export const depositBalance = () => {
-  return {
-    type: "DEPOSIT",
-  };
+export const depositBalance = (amount) => {
+  return (dispatch)=>{
+    dispatch({
+      type:'DEPOSIT',
+      payload:amount
+    })
+  }
 };
-export const withdrawBalance = () => {
-  return {
-    type: "WITHDRAW",
-  };
+export const withdrawBalance = (amount) => {
+  return (dispatch)=>{
+    dispatch({
+      type:'WITHDRAW',
+      payload:amount
+    })
+  }
 };
